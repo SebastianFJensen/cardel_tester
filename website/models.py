@@ -43,6 +43,7 @@ class Record(models.Model):
         ('Lukket sag', 'LUKKET SAG'),
     ]
     Moedestatus = [
+    ('Vælg', 'Vælg'),
     ('Møde booket', 'Møde booket'),
     ('Ombook', 'Ombook'),
     ('Møde aflyst', 'Møde aflyst'),
