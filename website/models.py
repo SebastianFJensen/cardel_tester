@@ -64,7 +64,7 @@ class Record(models.Model):
     Formaal = models.CharField(max_length=50, null=True, blank=True)
     Status = models.CharField(max_length=25, choices=Typen, default='Vælg')
     Lukket_aftale_Status = models.CharField(max_length=30, choices=Lukket_aftale_Status, default='Vælg', null=True, blank=True)
-    Moedestatus = models.CharField(max_length=30, choices=Moedestatus, null=True, blank=True)
+    Moedestatus = models.CharField(max_length=30, choices=Moedestatus, null=True, blank=True, default='Vælg')
     Lead = models.CharField(max_length=10, choices=Ansvarlig, default='Vælg')
     Forfaldsdato = models.DateField(null=True, blank=True)
     Opfølgningsdato = models.DateField(null=True, blank=True)
