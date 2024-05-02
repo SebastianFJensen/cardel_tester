@@ -137,6 +137,12 @@ USE_TZ = True
 FILE_UPLOAD_MAX_MEMORY_SIZE = 100 * 1024 * 1024
 
 
+DEFAULT_FILE_STORAGE = 'storages.backends.azureblob.AzureBlobStorage'
+AZURE_ACCOUNT_NAME = os.environ.get('AZURE_ACCOUNT_NAME')
+AZURE_ACCOUNT_KEY = os.environ.get('AZURE_ACCOUNT_KEY')
+AZURE_CONTAINER = os.environ.get('AZURE_CONTAINER')
+AZURE_LOCATION = os.environ.get('AZURE_LOCATION')
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
