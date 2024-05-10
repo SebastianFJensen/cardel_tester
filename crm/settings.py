@@ -137,7 +137,7 @@ USE_TZ = True
 FILE_UPLOAD_MAX_MEMORY_SIZE = 100 * 1024 * 1024
 
 
-DEFAULT_FILE_STORAGE = 'storages.backends.azureblob.AzureBlobStorage'
+DEFAULT_FILE_STORAGE = 'website.azure_storage.AzureStorage'
 
 AZURE_CONNECTION_STRING = os.environ['AZURE_CONNECTION_STRING']
 AZURE_CONTAINER_NAME = 'cardel'
