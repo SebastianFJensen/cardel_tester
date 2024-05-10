@@ -41,6 +41,13 @@ DATABASES = {
     }
 }
 
+DEFAULT_FILE_STORAGE = 'storages.backends.azureblob.AzureBlobStorage'
+
+AZURE_CONNECTION_STRING = os.environ['AZURE_CONNECTION_STRING']
+AZURE_CONTAINER_NAME = 'cardel'
+AZURE_STORAGE_ACCOUNT_NAME = os.environ['AZURE_STORAGE_ACCOUNT_NAME']
+AZURE_STORAGE_ACCOUNT_KEY = os.environ['AZURE_STORAGE_ACCOUNT_KEY']
+
 CACHES = {
         "default": {  
             "BACKEND": "django_redis.cache.RedisCache",
